@@ -1,4 +1,5 @@
-FROM 3.8.3-openjdk-17
+FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY ./target/TayeOlaProject-1.0-SNAPHOT.jar /app/
-CMD ["java", "-jar",  "/target/TayeOlaProject-1.0-SNAPHOT.jar"]
+COPY ./target/TayeOlaProject-1.0-SNAPSHOT.jar /app/
+CMD ["java", "-jar", "TayeOlaProject-1.0-SNAPSHOT.jar"]
+
